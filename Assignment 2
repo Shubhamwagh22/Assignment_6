@@ -1,0 +1,50 @@
+class Dog:
+    def __init__(self, name, age, coat_color):
+        self.name = name
+        self.age = age
+        self.coat_color = coat_color
+
+    def description(self):
+        print(f"Name: {self.name}")
+        print(f"Age: {self.age}")
+
+    def get_info(self):
+        print(f"Coat Color: {self.coat_color}")
+
+class JackRussellTerrier(Dog):
+    def __init__(self, name, age, coat_color):
+        super().__init__(name, age, coat_color)
+
+    def play(self):
+        print("Jack Russell Terrier is playing!")
+
+    def sleep(self):
+        print("Jack Russell Terrier is sleeping!")
+
+class Bulldog(Dog):
+    def __init__(self, name, age, coat_color):
+        super().__init__(name, age, coat_color)
+
+    def hunt(self):
+        print("Bulldog is hunting!")
+
+    def bark(self):
+        print("Bulldog is barking!")
+
+dog1 = Dog("Mike", 5, "Golden")
+dog1.description()
+dog1.get_info()
+print("\n")
+
+terrier = JackRussellTerrier("Rocky", 3, "Black")
+terrier.description()
+terrier.get_info()
+terrier.play()
+terrier.sleep()
+print("\n")
+
+bulldog = Bulldog("Bruno", 2, "Brown")
+bulldog.description()
+bulldog.get_info()
+bulldog.bark()
+bulldog.hunt()
