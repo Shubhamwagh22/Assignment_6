@@ -1,0 +1,15 @@
+import json
+
+indian_states = {
+    
+    "Maharashtra": "Mumbai", 
+    "Uttar pradesh": "Lucknow", 
+    "Tamil Nadu": "Chennai", 
+    "Kerala": "Thiruvananthapuram", 
+    "Madhya Pradesh": "Bhopal", 
+    "Bihar": "Patna", 
+    "Punjab": "Chandigarh"
+}
+with open('indian_states.json', 'w') as file:
+    json.dump(indian_states, file)
+print("JSON file created successfully.")
