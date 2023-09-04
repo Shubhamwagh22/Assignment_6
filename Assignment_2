@@ -44,6 +44,7 @@ terrier.sleep()
 print("\n")
 
 bulldog = Bulldog("Bruno", 2, "Brown")
+
 bulldog.description()
 bulldog.get_info()
 bulldog.bark()
